@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Righteous|Orbitron|Pacifico|Courgette');
+
+
+body {
+    background-image: url("media/starry-sky-2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
+
+
+h1 {
+    color: orange;
+	text-indent: 40px;
+	font-style: italic;
+	font-family: 'Righteous', cursive;
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+h2 {
+    color: cyan;
+	text-indent: 50px;
+	font-style: italic;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+h3 {
+    color: white;
+	text-align: right;
+	font-family: 'Orbitron', sans-serif;
+	
+	font-size: 25px;
+}
+
+h5 {
+    color: white;
+	text-align: right;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+}
+li {
+    display: inline;
+	
+}
+li a {
+    color: white;
+	border: 1px solid orange;
+    text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+li a.hover-white:hover {
+    background-color: white;
+	font-size: 28px;
+    color: black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+li a.social-icons {
+    border:none;
+	opacity: 0.7;
+	transition-duration: 0.4s;
+}
+
+li a.social-icons:hover {
+    opacity: 1.0;
+	-webkit-filter:invert(100%);
+	
+}
+
+li a.active {
+    background-color: white;
+	font-size: 30px;
+    color: green;
+	border-style:inset;
+	border: 2px solid green;
+}
+
+.back-to-top {
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+  text-indent: 10px;
+  opacity: 0.6;
+  transition-duration: 0.3s;
+}
+
+
+.back-to-top:hover {
+  opacity: 1.0;
+}
+
+.menu-button {
+  opacity: 0.7;
+  transition-duration: 0.1s;
+}
+
+.menu-button:hover {
+  opacity: 0.9;
+}
+
+.greettext {
+	color: blue;
+	position: absolute;
+	left: 38%;
+	width: 300px; 
+    
+	font-family: 'Righteous', cursive;
+	padding: 40px;
+	font-size: 50px;
+}
+
+.button-greet {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: orange;
+  color:blue;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  padding: 7px;
+  width: 230px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  position: relative;
+  left: 12%;
+  bottom: 12vw;
+}
+
+.button-greet:hover {
+	background-color: orange;
+	color:white;
+}
+.button-greet span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-greet span:after {
+  content: '\25bc';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-greet:hover span {
+  background-color: orange;
+  color:white;
+}
+
+.button-greet:hover span:after {
+  opacity: 1;
+  background-color: orange;
+  right: 0;
+  color:white;
+}
+
+h4.description-text{
+	color:white;
+	position: relative;
+	left: 10%;
+}
