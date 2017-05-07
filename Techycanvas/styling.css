@@ -28,6 +28,7 @@ h2 {
 	font-size: 50px;
 	font-weight: bold;
 	letter-spacing: 5px;
+	
 }
 
 h3 {
@@ -120,7 +121,7 @@ li a.active {
 
 .menu-button:hover {
   opacity: 0.9;
-  box-shadow: 0px 0px 20px 8px white;
+  box-shadow: 0px 0px 20px 5px white;
 }
 
 .greettext {
@@ -198,17 +199,19 @@ h4.description-text{
 	padding:4px;
 	width: 350px;
 	color: white;
-	position: absolute;
+	position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
 	text-align: left;
 	font-family: 'Orbitron', sans-serif;
 	font-size: 15px;
 	left: -400px;
-	top: 130px;
+	top: 0px;
 	height: 100%;
-	transition: left 0.3s linear;
+	transition: left 0.3s;
+    z-index: 10;
 }
 
 #latestupdate.visible{
-	left: 0px;
-	transition: left 0.3s linear;
+	left: 7px;
+	transition: left 0.3s;
 }

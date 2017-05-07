@@ -17,26 +17,36 @@ This website is developed and maintained by Suprotik Dey
 			$('#latestupdate').toggleClass('visible');
 			});
 		});
+		$(document).ready(function(){
+			$('#flip2').click(function(){
+			$('#latestupdate').toggleClass('visible');
+			});
+		});
 		</script>
 		
 		
 		
-		<div style="background-image: url('media/base.jpg')">	
+		<div style="background-image: url('media/base.jpg'); position:absolute;
+    top: 0; width: 100%; z-index: 10; height: 140px;">	
 			<ul><h2>
-			<li><img src="media\menu.png" class="menu-button" id="flip" height=50 width=60 align=left style="position: relative; top: 20px;cursor:pointer;"></li>
+			<li><img src="media\menu.png" class="menu-button" id="flip" height=50 width=60 align=left style="cursor:pointer; position: relative; top: 23px"></li>
 			<li >TECHy<font color="orange">CANVAS</font></li>
-			<li style="font-size: 20px;position: relative; left: 100px; width: 500px; padding: 50px;">
+			<li style="font-size: 20px;position: relative; left: 100px; width: 500px; ">
 			where technology meets ideas..</li>
 			</h2>
 			</ul>
 			
 		</div>	
-		
-		
+	
 		
 				
 		<div>	
 			<h3>
+			
+			<br>
+			<br>
+			<br>
+			<br>
 			<ul>
 			<li><a class="active" href="index.html">HOME</a></li>
 			<li><a class="hover-white" href="code.html">CODING</a></li>
@@ -54,7 +64,9 @@ This website is developed and maintained by Suprotik Dey
 		<div style="background: white;">
 		<nav id="latestupdate">
 			<br>
-			<u style="font-size:160%;">Latest Updates</u>
+			<br>
+			<br>
+			<u style="font-size:160%; display: inline;">Latest Updates <img src="media\close-button.png" class="menu-button" id="flip2" height=50 width=50 align=right style="cursor:pointer; position: relative; right: 4px;"></u>
 			<br>
 			<br>
 			<br>Created TechyCanvas
